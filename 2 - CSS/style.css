@@ -1,0 +1,37 @@
+#title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  justify-content: center;
+  align-items: normal;
+}
+
+#current {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0%;
+  padding: 0%;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0%;
+  padding: 0%;
+}
+.carousel-item {
+  transition: none !important;
+}
+input:focus {
+  outline-color: rosybrown !important;
+}
