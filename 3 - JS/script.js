@@ -1,4 +1,4 @@
-let input = url.parse(process.argv[2], true).query;
+let input;
 
 if (input == "tshirt") {
   console.log("T-Shirt");
