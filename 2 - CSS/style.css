@@ -10,9 +10,10 @@ body {
   align-content: space-evenly;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 25%;
+  margin-bottom: 0%;
 }
-/* #title {
+
+#title {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -26,7 +27,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
 }
-#product {
+/*#product {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -55,4 +56,4 @@ input:focus {
 #mainpicture {
   width: 460px;
   height: 690px;
-} */
+} $/
