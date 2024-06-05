@@ -10,32 +10,48 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/2 - CSS/style.css" />
+    <script link rel="stylesheet" href="/3 - JS/script.js" defer></script>
     <title>Boutique</title>
   </head>
 
   <body>
-    <body>
-      <div id="title" class="container container-lg">
-        <div>
-          <h2>T-Shirt Homme #E150 - TT-CGTU01T</h2>
-        </div>
+    <!-- <div class="container breadcrumb" id="current">
+      <span>
+        <a href="accueil.html">Accueil</a>
+      </span>
+      <span>
+        <a href="shop.html">Boutique</a>
+      </span>
+      <span>
+        <button type="submit"><a href="textile.html">Textile</a></button>
+      </span>
+      <span>
+        <a href="objets.html">Objets Personnalisé</a>
+      </span>
+    </div> -->
+
+    <form action="" method="get" class="form">
+      <div class="form">
+        <label for="tshirt">T-Shirt</label>
+        <input type="submit" name="tshirt" id="tshirt" value="T-Shirt" />
       </div>
-      <br />
-      <div class="container breadcrumb" id="current">
-        <span>
-          <a href="accueil.html">Accueil</a>
-        </span>
-        <span>
-          <a href="shop.html">Boutique</a>
-        </span>
-        <span>
-          <a href="textile.html">Textile</a>
-        </span>
-        <span>
-          <a href="objets.html">Objets Personnalisé</a>
-        </span>
+      <div class="form">
+        <label for="polo">Polo</label>
+        <input type="submit" name="polo" id="polo" value="Polo" />
       </div>
-      <div class="container col-6" id="galerie">
+      <div class="form">
+        <label for="veste">Veste</label>
+        <input type="submit" name="veste" id="veste" value="Veste" />
+      </div>
+      <div class="form">
+        <label for="short">Short</label>
+        <input type="submit" name="short" id="short" value="Short" />
+      </div>
+    </form>
+
+    <div class="container col-6" id="galerie">
+      <!-- Top Group -->
+      <div class="top-group">
         <div class="card" style="width: 18rem">
           <img
             class="card-img-top"
@@ -69,6 +85,9 @@
             <a href="#" class="btn btn-success">Fiche du produit</a>
           </div>
         </div>
+      </div>
+      <!-- Bottom Group -->
+      <div class="bottom-group">
         <div class="card" style="width: 18rem">
           <img
             class="card-img-top"
@@ -103,6 +122,7 @@
           </div>
         </div>
       </div>
+    </div>
 
     <!-- <div class="product-container">
       <div class="main-picture">

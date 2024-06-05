@@ -2,9 +2,36 @@ body {
   margin: 0%;
   padding: 0%;
 }
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3%;
+}
+form > div > label {
+  display: none;
+}
+form > div > input {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+}
+#current {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#current > span > a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+}
 
 #galerie {
-  display: flex;
+  display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-evenly;
@@ -14,26 +41,29 @@ body {
 }
 
 .card-img-top {
-  width: 100%; /* Assure que l'image prend toute la largeur de la carte */
-  height: 400px; /* Définit une hauteur fixe pour toutes les images */
-  object-fit: cover; /* Ajuste l'image pour remplir l'espace défini */
+  width: 100%; /* Ajuste la largeur de l'image selon vos besoins */
+  height: 400px; /* Ajuste la hauteur de l'image selon vos besoins */
+  object-fit: cover; /* Permet de redimensionner l'image pour que sa largeur et sa hauteur soient les mêmes */
 }
-#title {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: normal;
-  justify-content: center;
-  align-items: normal;
+.top-group,
+.bottom-group {
+  display: flex; /* Affiche les cartes en une seule ligne */
+  flex-wrap: wrap; /* Permet d'aligner les cartes sur plusieurs lignes si neccessaire */
+  gap: 1rem; /* Optionnel : ajoutes de l'espace entre les cartes */
 }
-
-#current {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.bottom-group {
+  margin-top: 2rem; /* Ajuste la valeur selon vos besoins */
+}
+.bottom-group > div > div > a {
+  color: rosybrown !important; /* Change la couleur du texte des boutons */
+  background-color: #fff5f7!important; /* Change la couleur de fond des boutons */
+}
+.top-group > div > div > a {
+  color: rosybrown !important; /* Change la couleur du texte des boutons */
+  background-color: #fff5f7!important; /* Change la couleur de fond des boutons */
 }
 /*#product {
-  display: flex;
+  display: flex;s
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
