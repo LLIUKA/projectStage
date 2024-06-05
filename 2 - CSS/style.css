@@ -3,7 +3,16 @@ body {
   padding: 0%;
 }
 
-#title {
+#galerie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25%;
+}
+/* #title {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -46,4 +55,4 @@ input:focus {
 #mainpicture {
   width: 460px;
   height: 690px;
-}
+} */
