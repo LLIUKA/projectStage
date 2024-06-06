@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function loadContent(category) {
-    fetch(`/${category}.html`)
+    fetch(`${category}.html`)
       .then((response) => response.text())
       .then((data) => {
         contentDiv.innerHTML = data;
