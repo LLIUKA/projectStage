@@ -1,0 +1,395 @@
+/* CSS navbar */
+
+#navbarotop {
+    height: 10%; 
+    width: 100%; 
+    background-color: #FFF5F7;
+}
+#navbarotop li {
+    display: inline;
+    margin-left: 25%;
+    
+    
+}
+#navbarnav {
+    display: flex;
+    align-items: center;
+}
+#nav-linkdropdown {
+    color: rosybrown;
+}
+
+#searchbar input {
+    width: 25em
+}
+#loupe {
+    color: #FFF5F7;
+    margin-top: 25%;
+    margin-left: -40%;
+}
+#moncompte {
+    color: rosybrown;
+}
+#moncompte button {
+    color: rosybrown;
+}
+#moncompte i {
+    color: rosybrown
+}
+#monpanier i {
+    color: rosybrown
+}
+#accueilbouton {
+    color: rosybrown;
+}
+#basic-addon1 {
+    background-color: rosybrown;    
+}
+#searchbar {
+    margin-top: 4%;
+}
+
+/* CSS megamenu */
+
+#dropdownmenu {
+    background-color: #FFF5F7; 
+    margin-top: -1%;
+}
+#dropdownmenu h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rosybrown;
+}
+#dropdownmenu li {
+    display: flex;
+    flex-direction: row;
+}
+#menumoncompte {
+    background-color: #FFF5F7;
+}
+#menumoncompte .dropdown-item {
+    color: rosybrown;
+}
+#cardshadow1 {
+    margin-left: 4%;
+}
+#cardshadow1 div { /* Carte du megamenu */ 
+    background-color: #FF1E6E; 
+    height: 7em; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border-bottom-left-radius: 11%;
+}
+#cardshadow1 a { /* Carte du megamenu */ 
+    text-decoration: none; 
+    color: white;
+}
+#cardshadow2 { /* Carte du megamenu */ 
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#cardshadow2 div { /* Carte du megamenu */ 
+    background-color: #F89D1A; 
+    height: 9em; display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border-bottom-left-radius: 11%;
+}
+#cardshadow2 a { /* Carte du megamenu */ 
+    text-decoration: none;
+    color: white;
+}
+#cardshadow3 { /* Carte du megamenu */ 
+    margin-right: 2%;
+}
+#cardshadow3 div { /* Carte du megamenu */ 
+    background-color: #46ACA6; 
+    height: 10em; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border-bottom-left-radius: 11%;
+}
+#cardshadow3 a { /* Carte du megamenu */ 
+    text-decoration: none; 
+    color: white;
+}
+#cardshadow4 { /* Carte du megamenu */ 
+    margin-left: 4%;
+}
+#cardshadow4 a { /* Carte du megamenu */ 
+    text-decoration: none;
+}
+#cardshadow4 a li { /* Carte du megamenu */ 
+    color: grey;
+}
+#cardshadow5 { /* Carte du megamenu */ 
+    margin-right: 2%; 
+    margin-left: 2%;
+}
+#cardshadow5 a { /* Carte du megamenu */ 
+    text-decoration: none;
+}
+#cardshadow5 a li { /* Carte du megamenu */ 
+    color: grey;
+}
+#cardshadow6 { /* Carte du megamenu */ 
+    margin-right: 4%;
+}
+#cardshadow6 a { /* Carte du megamenu */ 
+    text-decoration: none;
+}
+#cardshadow6 a li { /* Carte du megamenu */ 
+    color: grey;
+}
+#descriptif { /* Texte a coté carte du megamenu latérale */ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -3%;
+}
+#descriptif div {
+    text-align: center;
+    margin-top: 3%;
+}
+#descriptif h6 {
+    color: grey;
+    margin-top: 6%;
+}
+#cardshadow7 { /* Carte du megamenu */ 
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 1%;
+}
+#cardshawdow7 div { /* Carte du megamenu */ 
+    width: 100;
+}
+#cardshadow7 h4 { /* Carte du megamenu */ 
+    color: rosybrown;
+}
+#cardshadow7 .card-body { /* Carte du megamenu */ 
+    margin-top: -15%;
+}
+
+#survolcard7 img:hover { /* animation survol carte du megamenu laterale */ 
+    animation: survol 0.5s;
+    filter: grayscale();
+} 
+/* CSS du carousel */
+
+#carouselExampleDark {
+    background-color: #FAF4FF;
+    object-fit: cover;
+}
+#carouselitem .img1 {
+    display: flex;
+    width: 50%;
+    margin-top: 5%;
+    
+}
+#carouselitem2 .img2 {
+    display: flex;
+    width: 50%;
+    margin-top: 5%;
+    
+}
+#carousel-caption {
+    color: grey; 
+    margin-right: -50%; 
+    margin-bottom: 1%;
+}
+#carousel-caption h1 {
+    font-size: 400%;
+    margin-top: -25%;
+}
+
+#carousel-caption h5 {
+    font-size: 180%;
+}
+
+#boutoncarousel {
+    background-color: #FFF5F7; 
+    color: rosybrown;
+}
+
+/* CSS catégories boutons */
+
+#categoriebouton {
+    margin-bottom: 5%;
+}
+#categoriebouton div {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 5%;
+}
+#categoriebouton h1 {
+    margin-right: 10%;
+    margin-left: -3%; 
+    color: grey;
+}
+#bouton1 {
+    background-color: #F6F1E9; 
+    color: grey;
+}
+#bouton2 {
+    background-color: #EDFDD3; 
+    color: grey;
+}
+#bouton3 {
+    background-color: #FFF1F2; 
+    color: grey;
+}
+#bouton4 {
+    background-color: #EBF7FF; 
+    color: grey;
+}
+#bouton5 {
+    background-color: #FAF4FF;; 
+    color: grey;
+}
+/* CSS Cartes déstockage, promotions, nouveautés */
+
+#carddestockage {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#carddestockage a {
+    background-color: #FFF5F7; 
+    color: grey;
+}
+
+/* CSS Icones ventes, tissus support, paiement  */
+
+#icones {
+    display: flex; 
+    justify-content: space-evenly;
+    margin-top: 5%; 
+    margin-bottom: 8%;
+}
+#icones i {
+    color: grey;
+}
+#icones h5 {
+    font-size: 130%; 
+    color: rosybrown;
+}
+
+/* CSS NOUVEAUTÉS */
+
+#nouveau {
+    display: flex;
+    justify-content: end; 
+    background-color: #FAF4FF; 
+    margin-top: 5%;
+}
+#nouveau img {
+    width: 38%;
+}
+#nouveaubouton {
+    display: flex; 
+    justify-content: end; 
+    margin-right: 8%; 
+    margin-top: -5%;
+}
+#nouveaubouton a {
+    background-color: #FFF5F7; 
+    color: grey;
+}
+#cardshadow8 {
+    display: flex;
+    justify-content: end;
+    margin-left: 30%;
+    margin-top: -30%;
+    margin-bottom: 40%;
+    
+
+}
+/* CSS PARTENAIRES */
+
+#titrepartenaire {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    margin-top: 5%;
+}
+#titrepartenaire h2 {
+    font-size: 300%;
+}
+#partenaire {
+    display: flex; 
+    justify-content: space-evenly; 
+    color: grey; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#partenaire h5 {
+    font-size: 300%;
+}
+#partenaire i {
+    color: rosybrown;
+}
+
+/* CSS reseaux */
+
+#backgroundreseaux {
+    background-color: #FAF4FF;
+    
+}
+#titrereseaux {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    margin-top: 1%;
+}
+#titrereseaux h2 {
+    font-size: 150%;
+    margin-top: 5%;
+}
+#reseaux {
+    display: flex; 
+    justify-content: space-evenly; 
+    color: rosybrown; 
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+#reseaux h5 {
+    font-size: 200%;
+}
+#reseaux i {
+    color: grey;
+    margin-bottom: 60%;
+}
+
+/* CSS footer */
+
+#footer {
+    background-color: #FFF5F7;
+    margin-top: -6%;
+}
+#footer2 {
+    margin-left: 5%;
+}
+#logootop {
+    width: 60%;
+}
+#footer2 ul li, p {
+    color: grey;
+    list-style-type: none;
+}
+#footer2 a {
+    text-decoration: none;
+}
+#footer2 h5 {
+    margin-top: 40%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+#logootop {
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+#liste {
+    margin-left: -12%;
+}
