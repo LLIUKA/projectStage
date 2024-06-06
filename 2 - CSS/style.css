@@ -1,22 +1,9 @@
 body {
   margin: 0%;
   padding: 0%;
+  height: auto;
 }
-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 3%;
-}
-form > div > label {
-  display: none;
-}
-form > div > input {
-  width: 100px;
-  height: 30px;
-  margin: 10px;
-}
+
 #current {
   display: flex;
   flex-direction: row;
@@ -28,16 +15,6 @@ form > div > input {
   font-size: 18px;
   font-weight: bold;
   margin: 10px;
-}
-
-#galerie {
-  display: flex; 
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 0%;
 }
 
 .card-img-top {
@@ -54,41 +31,7 @@ form > div > input {
 .bottom-group {
   margin-top: 2rem; /* Ajuste la valeur selon vos besoins */
 }
-.bottom-group > div > div > a {
+.btn {
   color: rosybrown !important; /* Change la couleur du texte des boutons */
-  background-color: #fff5f7!important; /* Change la couleur de fond des boutons */
+  background-color: #fff5f7 !important; /* Change la couleur de fond des boutons */
 }
-.top-group > div > div > a {
-  color: rosybrown !important; /* Change la couleur du texte des boutons */
-  background-color: #fff5f7!important; /* Change la couleur de fond des boutons */
-}
-/*#product {
-  display: flex;s
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-end;
-  margin: 0%;
-  padding: 0%;
-  width: 714px;
-  height: 1070px;
-}
-#info {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-end;
-  position: absolute;
-  width: 50%;
-  margin: 0%;
-  padding: 0%;
-}
-.carousel-item {
-  transition: none !important;
-}
-input:focus {
-  outline-color: rosybrown !important;
-}
-#mainpicture {
-  width: 460px;
-  height: 690px;
-} $/
