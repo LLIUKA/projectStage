@@ -9,13 +9,138 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="/2 - CSS/style.css" />
+    <link rel="stylesheet" href="/2 - CSS/styleaccueil.css">
     <script link rel="stylesheet" href="/3 - JS/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/259f41835c.js" crossorigin="anonymous"></script> 
     <title>Boutique</title>
   </head>
 
   <body>
     <!-- Ajout de la navbar ici -->
+    <section id="navbar ">
+
+      <div class="container ">
+        <nav id="navbarotop" class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-expand-sm">
+          <div class="navbar-nav">
+            <ul class="navbar-nav"  id="navbarnav">
+              <li class="nav-item" id="navitem">
+                <a class="nav-link active" aria-current="page" href="#" id="accueilbouton"><h5>Accueil</h5></a>
+              </li>
+              <li class="nav-item dropdown;" id="navitem">
+                <a class="nav-link dropdown" id="nav-linkdropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><h5>
+                  Textiles</h5></a>
+                <ul class="dropdown-menu" id="dropdownmenu">
+                  <h2>NOTRE OFFRE TEXTILE</h2>
+                  <li>
+                    <div class="col-lg-2">
+                      <div class="card shadow-sm" id="cardshadow1">
+                        <img src="/4 - Images/image3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body text-bg">
+                          <a href="#"><h5 class="card-title"><i class="fa-solid fa-shirt"></i> Nouveautés</h5></a>
+                        </div>
+                      </div>
+                    </div>         
+                    <div class="col-lg-2">
+                      <div class="card shadow-sm"  id="cardshadow2">
+                        <img src="/4 - Images/image4.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body text-bg"> 
+                          <a href="#"><h5 class="card-title"><i class="fa-solid fa-shirt"></i> Déstockage</h5></a>
+                        </div>
+                      </div>
+                    </div>         
+                    <div class="col-lg-2">
+                      <div class="card shadow-sm" id="cardshadow3">
+                        <img src="/4 - Images/image5.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body text-bg">
+                          <a href="#"><h5 class="card-title"><i class="fa-solid fa-shirt"></i> Promotions</h5></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="card shadow-sm"  id="cardshadow4">
+                        <img src="/4 - Images/image10.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <ul>
+                            <a href="#"><li><p>T-Shirts Enfants</p></li></a>
+                            <a href="#"><li><p>Polos Enfants</p></li></a>
+                            <a href="#"><li><p>Sweat-Shirts Enfants</p></li></a>
+                            <a href="#"><li><p>Vestes Enfants</p></li></a>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="card shadow-sm" id="cardshadow5">
+                        <img src="/4 - Images/image11.png" class="card-img-top" alt="...">
+                        <div class="card-body" >
+                          <ul>
+                            <a href="#"><li><p>T-Shirts Femmes</p></li></a>
+                            <a href="#"><li><p>Polos Femmes</p></li></a>
+                            <a href="#"><li><p>Sweat-Shirts Femmes</p></li></a>
+                            <a href="#"><li><p>Vestes Femmes</p></li></a>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="card shadow-sm" id="cardshadow6">
+                          <img src="/4 - Images/image12.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <ul>
+                              <a href="#"><li><p>T-Shirts Hommes</p></li></a>
+                              <a href="#"><li><p>Polos Hommes</p></li></a>
+                              <a href="#"><li><p>Sweat-Shirts Hommes</p></li></a>
+                              <a href="#"><li><p>Vestes Hommes</p></li></a>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li id="descriptif">
+                    <div class="card-body col-lg-6">
+                      <h6><p>Vous êtes un club de sport, une association, découvrez notre gamme, composés<br> de gammes complètes avec des offres groupés pour des opérations réussies !</p></h6>
+                    </div>
+                    <div class="col-lg-6" id="cardshadow7">
+                      <div class="card shadow-sm">
+                        <a href="#" id="survolcard7" alt="..."><img src="/4 - Images/image15.jpg"  class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                          <h4>Offre clubs de sport</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+             </li>
+             <li class="nav-item" id="navitem">
+                <div class="dropdown">
+                  <a class="nav-link  btn btn dropdown" id="moncompte" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <h5><i class="fa-regular fa-user"></i> Mon Compte</h5>
+                  </a>
+                  <ul id="menumoncompte" class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Se Connecter</a></li>
+                    <li><a class="dropdown-item" href="#">Inscription</a></li>
+                  </ul>
+                </div>
+              <li class="nav-item" id="navitem">
+                <a href="#" id="monpanier" class="nav-link">
+                  <h5>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </h5>
+                </a>
+              </li>
+              <li class="nav-item nav-item-expand-lg nav-item-expand-md nav-item-expand-sm">
+                <div class="input-group mb-3" id="searchbar">
+                  <span class="input-group-text" id="basic-addon1"><a href="#"><h4><i id="loupe" class="fa-solid fa-magnifying-glass"></i></h4></a>
+                  <input type="text" class="form-control" placeholder="Rechercher..." aria-label="Username" aria-describedby="basic-addon1">
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     <!-- Galerie -->
     <div class="container col-6" id="galerie">
       <!-- Top Group -->

@@ -22,7 +22,7 @@ body {
 .top-group,
 .bottom-group {
   display: flex; /* Affiche les cartes en une seule ligne */
-  flex-wrap: wrap; /* Permet d'aligner les cartes sur plusieurs lignes si neccessaire */
+  flex-wrap: nowrap; /* Permet d'aligner les cartes sur plusieurs lignes si neccessaire */
   gap: 1rem; /* Optionnel : ajoutes de l'espace entre les cartes */
 }
 .bottom-group {
