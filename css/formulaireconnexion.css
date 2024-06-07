@@ -1,0 +1,39 @@
+#body {
+    background-color: #FFF5F7;
+}
+#logo {
+    width: 50%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+
+}
+#titre {
+    margin-bottom: 5%;
+    margin-left: 38%;
+    color: grey;
+
+}
+#champinscription {
+    width: 60%;
+    margin-bottom: 3%;
+    margin-left: 20%;
+}
+#boutonformulaire h6 {
+    font-size: 130%;
+    text-align: center;
+    color: rosybrown;
+    
+}
+#champinscription button {
+    margin: 10%;
+}
+#champinscription i {
+    color: #FFF5F7;
+}
+#fondicone{
+    background-color: rosybrown;
+}
+.container-fluid {
+    display: block;
+    margin-right: 50%;
+}

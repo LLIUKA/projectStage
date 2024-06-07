@@ -1,12 +1,7 @@
 <?php 
 session_start();
-    //securisation des acces a la page admin
-    if(!isset($_SESSION['KI3ydh638DH'])){
-    header("Location: ../login.php");
-    }
-    if(empty($_SESSION['KI3ydh638DH'])){
-        header("Location:../login.php");
-    }
+    
+ 
 
     require("../config/commandes.php")
 ?>
@@ -49,10 +44,12 @@ session_start();
 
 
                         <button type="submit" name="valider" class="btn btn-primary">ajouter un nouveau produit</button>
+                       
                 </form>
             </div>
         </div>
-    </section>
+    </section> 
+    <a href="supprimer.php" class="btn btn-primary">supprimer un produit ?</a>
 </body>
 
 </html>

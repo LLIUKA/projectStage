@@ -4,6 +4,13 @@
 
   //creation variable qui recois les produit grace a la function afficher
   $Produits=afficher();
+
+  if (isset($_SESSION)) {
+    echo "Une session est active.";
+  } else {
+    echo "Aucune session n'est active.";
+  }
+ 
 ?>
 
 
@@ -18,7 +25,6 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
     <title>Album example · Bootstrap v5.3</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
     
@@ -169,8 +175,7 @@
         </li>
       </ul>
     </div>
-
-    
+   
 <header data-bs-theme="dark">
   <div class="collapse text-bg-dark" id="navbarHeader">
     <div class="container">
@@ -182,7 +187,9 @@
         <div class="col-sm-4 offset-md-1 py-4">
           <h4>sign in</h4>
           <ul class="list-unstyled">
-            <li><a href="admin/index.php" class="text-white">connexion</a></li>
+            <li><a href="login.php" class="text-white">login</a></li>
+            <li><a href="register.php" class="text-white" name="panier" >register</a></li>
+            <li><button method="post" class=btn-danger name="deconnexion">deconnexion</button</li>
           </ul>
         </div>
       </div>
@@ -211,6 +218,7 @@
         <p>
           <a href="#" class="btn btn-primary my-2">Main call to action</a>
           <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        
         </p>
       </div>
     </div>
@@ -254,3 +262,4 @@
 
     </body>
 </html>
+

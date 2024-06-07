@@ -1,8 +1,10 @@
 <?php  
-//demarer la session amdin
-session_start();
 
-include "config/commandes.php"
+
+
+
+require "config/connexion.php";
+
 
 ?>
 
@@ -19,10 +21,14 @@ include "config/commandes.php"
 <form method="post">
     <section id="login">
         <div class="container">
+        <div class="form-group">
+    <label for="nom">nom utilisateur</label>
+    <input type="text" class="form-control" name="nom">
+  </div>
   <div class="form-group">
     <label for="email">Email address</label>
     <input type="email" class="form-control" name="email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="motdepasse">Mot de passe</label>
@@ -35,22 +41,23 @@ include "config/commandes.php"
 </body>
 </html>
 <?php 
-//recuperation des info connexion admin
-if (isset($_POST['valider'])) {  // Check if the form was submitted
-    if (!empty($_POST['email']) AND !empty($_POST['motdepasse'])) {  // Check if email and password are not empty
-        $email = htmlspecialchars($_POST['email']); // Sanitize email to prevent XSS
-        $motdepasse = htmlspecialchars($_POST['motdepasse']); // Sanitize password to prevent XSS
 
-        $admin = getAdmins($email, $motdepasse);  // Validate credentials with getAdmins
+session_start();
 
-        if ($admin) {  // Check if getAdmins returned true (valid credentials)
-            $_SESSION['KI3ydh638DH'] = $admin; // Store admin data in session (potentially sensitive, consider alternatives)
-            header('location:admin/');  // Redirect to admin page
-        } else {
-            echo "Email ou mot de passe incorrect"; // Display error message
+require "config/commandes.php";
+//verification de saisie du formulaire
+if(isset($_POST['valider'])){
+  //verif remplisage
+    if(!empty($_POST['nom']) AND!empty($_POST['motdepasse'] AND!empty($_POST['email']))){
+      //creation des variable avec sha1 pour hacher les mdp en bdd
+        $pseudo = htmlspecialchars($_POST['nom']);      
+        $email = htmlspecialchars($_POST['email']);
+        $mdp = ($_POST['motdepasse']);
+
+        register($pseudo, $email, $mdp);
         }
-    } else {
-        echo "Veuillez remplir tous les champs du formulaire."; // Display message for empty fields
+    }else{
+      echo "ERROR : veuillez remplir tous les champs";
     }
-}
+
 ?>
