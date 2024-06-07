@@ -1,0 +1,30 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3%;
+}
+form > div > label {
+  display: none;
+}
+form > div > input {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+}
+
+#galerie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0%;
+}

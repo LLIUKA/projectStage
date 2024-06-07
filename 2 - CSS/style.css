@@ -1,0 +1,37 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  height: auto;
+}
+
+#current {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#current > span > a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.card-img-top {
+  width: 100%; /* Ajuste la largeur de l'image selon vos besoins */
+  height: 400px; /* Ajuste la hauteur de l'image selon vos besoins */
+  object-fit: cover; /* Permet de redimensionner l'image pour que sa largeur et sa hauteur soient les mêmes */
+}
+.top-group,
+.bottom-group {
+  display: flex; /* Affiche les cartes en une seule ligne */
+  flex-wrap: wrap; /* Permet d'aligner les cartes sur plusieurs lignes si neccessaire */
+  gap: 1rem; /* Optionnel : ajoutes de l'espace entre les cartes */
+}
+.bottom-group {
+  margin-top: 2rem; /* Ajuste la valeur selon vos besoins */
+}
+.btn {
+  color: rosybrown !important; /* Change la couleur du texte des boutons */
+  background-color: #fff5f7 !important; /* Change la couleur de fond des boutons */
+}
