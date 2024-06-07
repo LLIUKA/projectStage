@@ -19,12 +19,15 @@ form > div > input {
   margin: 10px;
 }
 
-#galerie {
+#current {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-evenly;
   justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 0%;
+}
+#current > span > a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
 }

@@ -4,17 +4,14 @@ body {
   height: auto;
 }
 
-#current {
+#galerie {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-evenly;
   justify-content: space-evenly;
-}
-#current > span > a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px;
+  align-items: center;
+  margin-bottom: 0%;
 }
 
 .card-img-top {
