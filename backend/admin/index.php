@@ -1,8 +1,7 @@
 <?php 
+// Démarre une nouvelle session ou reprend une session existante
 session_start();
-    
- 
-
+// Inclut le fichier contenant les commandes (fonctions) pour interagir avec la base de données
     require("../config/commandes.php")
 ?>
 
@@ -57,10 +56,10 @@ session_start();
 // verification du remplisage du formulaire et mise en base de donne avec la method post
  if(isset($_POST['valider']))
  {
-    //verification du remplisage
+    // Vérification que tous les champs du formulaire sont présents
     if(isset($_POST['image']) AND isset($_POST['nom']) AND isset($_POST['prix']) AND isset($_POST['desc']))
     {
-        //recuperation des donné du formulaire
+        //recuperation et sécurisation des données du formulaire
         if(!empty($_POST['image']) AND !empty($_POST['nom']) AND !empty($_POST['prix']) AND !empty($_POST['desc']))
         {
             $image= htmlspecialchars(strip_tags($_POST['image']));
@@ -68,7 +67,7 @@ session_start();
             $prix= htmlspecialchars(strip_tags($_POST['prix']));
             $desc= htmlspecialchars(strip_tags($_POST['desc']));
 
-            //ajout des donné dans la base de donner et sur le site
+            //ajout des données dans la base de donner et sur le site
             ajouter($image, $nom, $prix, $desc);
             }
         }
